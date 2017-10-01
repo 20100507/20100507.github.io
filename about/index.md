@@ -6,7 +6,7 @@ date: 2016-03-21
 comments: false
 ---
     
-<center><a href="http://www.bianqi.org"><b>me</b></a>最重要的选择,最难的是坚持.</center>
+<center><a href="http://www.bianqi.org"><b>回眸,境界</b></a>最重要的选择,最难的是坚持.</center>
 
 ## 爱好
 * Minimal, you can focus on your content
