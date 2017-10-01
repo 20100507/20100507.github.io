@@ -40,11 +40,11 @@ disqus_shortname:   20100507
 #email:
 twitter:            bianqi123
 facebook:           username
-github-url:         https://www.github.com/20100507
-stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+github-url:         20100507
+stackoverflow:      20100507
 #linkedin:          username
 #xing:              username
-instagram:          username
+#instagram:          username
 #lastfm:            username
 #tumblr:            username
 #medium:            '@username'
@@ -55,7 +55,7 @@ steam:              username
 #youtube:           username
 #youtube-channel:   channel
 #soundcloud:        username
-#weibo:             username
+weibo:             username
 #flickr:            username
 #codepen:           username
 #keybase:           username
