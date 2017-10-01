@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about me
+title: 关于 我
 tags: [about, Jekyll, theme, moon]
 date: 2016-03-21
 comments: false
