@@ -30,13 +30,13 @@ disqus_shortname:   20100507
 
 # Social
 # if you don't have any of social below, comment the line.
-google:
-  plus:            username
-  analytics:
-  verify:
-  ad-client:
-  ad-slot:
-bing-verify:
+#google:
+  #plus:            username
+  #analytics:
+  #verify:
+  #ad-client:
+  #ad-slot:
+  #bing-verify:
 email:              bq18703414250@gmail.com     
 twitter:            bianqi123
 facebook:           username
