@@ -6,16 +6,8 @@ date: 2016-03-21
 comments: false
 ---
     
-<center><a href="http://www.bianqi.org"><b>回眸,境界</b></a>最重要的选择,最难的是坚持.</center>
+<center><a href="http://www.bianqi.org"><b>lpgad</b></a>最重要的选择,最难的是坚持.</center>
 
-## 爱好
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## 个人资料
+* 男,90后,白羊座 
+* 像他明天就会出现那样期待   像他永远不会来那样生活
