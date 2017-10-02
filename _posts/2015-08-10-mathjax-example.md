@@ -5,7 +5,6 @@ date:   2015-08-10
 excerpt: "MathJax Example for Moon Jekyll Theme."
 tag:
 - markdown 
-- example
 - test
 comments: true
 ---
