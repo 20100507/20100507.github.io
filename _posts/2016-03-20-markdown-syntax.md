@@ -8,7 +8,6 @@ tag:
 - syntax
 - sample
 - test
-- jekyll
 comments: true
 ---
 
