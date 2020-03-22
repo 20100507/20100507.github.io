@@ -13,7 +13,6 @@ tag: 数据迁移
 
 **执行克隆命令**
 
-如下为执行命令:
 
 > 1. git clone --bare git@192.168.6.161:bit_data/weather_city.git
 > 2. cd weather_city
@@ -22,7 +21,6 @@ tag: 数据迁移
 
 **执行上传命令**
 
-如下为执行命令:
 
 > 1. git push --mirror git@192.168.1.20:datagroup/bit_data/weather_city.git
 > 2. cd .. 
