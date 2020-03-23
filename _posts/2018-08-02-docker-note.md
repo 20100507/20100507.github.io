@@ -52,7 +52,7 @@ tag: 容器Docker
 
 ***删除没有tag的所有镜像***
 
-> 1. docker rmi -f $(docker images | grep '<none>' | tr -s ' ' | cut
+> 1. `docker rmi -f $(docker images | grep '<none>' | tr -s ' ' | cut`
 
 ***删除镜像中包含关键字的镜像***
 
