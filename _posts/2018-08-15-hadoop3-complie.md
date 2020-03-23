@@ -29,6 +29,8 @@ tag: 大数据Hadoop
 > 2. maven.sh网盘地址：https://pan.baidu.com/s/1drap4XfkZHTap6NRC5dTjg uaos 
 > 3. 注释掉hadoop 最外层pom.xml文件中的内容
 
+<br/>
+
 ```
  <repositories>
 <!--
@@ -123,8 +125,9 @@ mvn clean package -Pdist,native -DskipTests -Dtar  -Drequire.snappy
 </div>
 **编码库全部都支持**
 <div align="left">
-<img src="/images/posts/hadoop3/code.png" height="60" width="580" />
+<img src="/images/posts/hadoop3/code.png" height="240" width="780" />
 </div>
+
 ### 支持LZO压缩
 
 **添加lzo压缩支持**
