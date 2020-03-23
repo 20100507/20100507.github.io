@@ -31,13 +31,9 @@ tag: 容器Docker
 **启动ES容器**
 
 > 1. docker run -di --name=es -p 9200:9200 -p 9300:9300 -v /usr/share/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml elasticsearch:5.6.8
-
 > 2. docker cp es:/usr/share/elasticsearch/config/elasticsearch.yml /usr/share/elasticsearch.yml
-
 > 3. docker run -di --name=header -p 9100:9100 mobz/elasticsearch-head:5
-
 > 4. docker cp ik es:/usr/share/elasticsearch/plugins
-
 > 5. 配置文件网盘地址 https://pan.baidu.com/s/1X8jXxt_8o09MnhV63wJLbQ v98c
 
 
@@ -54,7 +50,7 @@ tag: 容器Docker
 
 ***删除没有tag的所有镜像***
 
-> 1. docker rmi -f $(docker images | grep '<none>' | tr -s ' ' | cut
+> 1. docker rmi -f $(docker images | grep \'<none>\' | tr -s \' \' | cut
 
 ***删除镜像中包含关键字doss-api的镜像***
 
