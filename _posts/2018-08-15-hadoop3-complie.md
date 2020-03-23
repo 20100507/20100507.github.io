@@ -99,12 +99,18 @@ tag: 大数据Hadoop
 
 **检测是否安装成功**
 
-****检查cmake****
+1. 检查cmake
+<div align="left">
 <img src="/images/posts/hadoop3/cmake.png" height="120" width="640" />  
-****检查protobuf****
-<img src="/images/posts/hadoop3/protobuf.png" height="120" width="640" /> ****检查maven****
+</div>
+2. 检查protobuf
+<div align="left">
+<img src="/images/posts/hadoop3/protobuf.png" height="120" width="640" /> 
+</div>
+3. 检查maven
+<div align="left">
 <img src="/images/posts/hadoop3/maven.png" height="120" width="640" />
-
+</div>
 ### 编译Hadoop3.2.1源码
 
 **执行mvn命令编译源代码**
@@ -113,13 +119,13 @@ tag: 大数据Hadoop
 mvn clean package -Pdist,native -DskipTests -Dtar  -Drequire.snappy
 ```
 **如下图编译成功**
-
+<div align="left">
 <img src="/images/posts/hadoop3/hadoop3.png" height="620" width="580" />
-
+</div>
 **编码库全部都支持**
-
+<div align="left">
 <img src="/images/posts/hadoop3/code.png" height="280" width="580" />
-
+</div>
 ### 支持LZO压缩
 
 **添加lzo压缩支持**
