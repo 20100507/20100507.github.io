@@ -79,7 +79,6 @@ tag: 大数据Hadoop
 **修改系统环境变量**
 
 > 1. 修改/etc/profile文件,添加如下内容
-
 > 2. `export FINDBUGS_HOME=/opt/findbugs-3.0.1`<br/>
      `export PATH=$FINDBUGS_HOME/bin:$PATH`<br/>
      `export PATH=/opt/protobuf/bin:$PATH`<br/>
@@ -87,13 +86,13 @@ tag: 大数据Hadoop
 
 **yum安装相关依赖**
 
-> 1.`yum -y install build-essential autoconf automake libtool cmake      zlib1g-dev pkg-config libssl-dev libsasl2-dev`<br/>
-    `yum install -y cyrus-sasl*`<br/>
-    `yum install -y libgsasl-devel*`<br/>
-    `yum install fuse-devel -y`<br/>
-    `yum -y install protobuf-devel`<br/>
-    `yum -y install snappy`<br/>
-    `yum -y install bzip2`<br/>
+> 1. `yum -y install build-essential autoconf automake libtool cmake zlib1g-dev pkg-config libssl-dev libsasl2-dev`<br/>
+     `yum install -y cyrus-sasl*`<br/>
+     `yum install -y libgsasl-devel*`<br/>
+     `yum install fuse-devel -y`<br/>
+     `yum -y install protobuf-devel`<br/>
+     `yum -y install snappy`<br/>
+     `yum -y install bzip2`<br/>
 
 
 
@@ -130,5 +129,5 @@ mvn clean package -Pdist,native -DskipTests -Dtar  -Drequire.snappy
 
 **添加lzo压缩支持**
 
-> 1.网盘地址: https://pan.baidu.com/s/1PtEf7Y5osPyB0VWxs7y2rw uw47 
+> 1. 网盘地址: https://pan.baidu.com/s/1PtEf7Y5osPyB0VWxs7y2rw uw47
 > 2. 拷贝到 /opt/hadoop/share/hadoop/mapreduce/lib 目录同时配置相关配置文件即可支持LZO压缩
