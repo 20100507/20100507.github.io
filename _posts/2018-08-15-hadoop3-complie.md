@@ -127,7 +127,7 @@ mvn clean package -Pdist,native -DskipTests -Dtar  -Drequire.snappy
 ```
 **如下图编译成功**
 <div align="left">
-<img src="/images/posts/hadoop3/hadoop3.png" height="720" width="1180" />
+<img src="/images/posts/hadoop3/hadoop3.png" height="820" width="1180" />
 </div>
 **native库全部都支持**
 <div align="left">
