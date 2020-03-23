@@ -101,17 +101,23 @@ tag: 大数据Hadoop
 **检测是否安装成功**
 
 1. 检查cmake
+
 <div align="left">
 <img src="/images/posts/hadoop3/cmake.png" height="120" width="640" />  
 </div>
+
 2. 检查protobuf
+
 <div align="left">
 <img src="/images/posts/hadoop3/protobuf.png" height="120" width="640" /> 
 </div>
+
 3. 检查maven
+
 <div align="left">
 <img src="/images/posts/hadoop3/maven.png" height="120" width="640" />
 </div>
+
 ### 编译Hadoop3.2.1源码
 
 **执行mvn命令编译源代码**
