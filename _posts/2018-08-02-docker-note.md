@@ -7,8 +7,7 @@ tag: 容器Docker
 
 ### 前言
     
-	Docker作为容器技术,以其秒级启动,资源占用小等优点,在2014年开始在国内流行,逐渐被越来越多的公司认可。如下为工作中记录的常用命令,
-	用作备忘。
+	Docker作为容器技术,以其秒级启动,资源占用小等优点,在2014年开始在国内流行,逐渐被越来越多的公司认可。如下为工作中记录的常用命令,用作备忘。
 
 ### 常用的应用启动
 
@@ -40,20 +39,22 @@ tag: 容器Docker
 > 4. docker cp ik es:/usr/share/elasticsearch/plugins
 
 > 5. 配置文件网盘地址 https://pan.baidu.com/s/1X8jXxt_8o09MnhV63wJLbQ v98c
+
+
 ### 常用的批量操作命令
 
 
 ***删除所有容器***
 
-> 1. `docker rm `docker ps -a -q``
+> 1. docker rm `docker ps -a -q`
 
 ***删除所有的镜像***
 
-> 1. `docker rmi `docker images -q``
+> 1. docker rmi `docker images -q`
 
 ***删除没有tag的所有镜像***
 
-> 1. `docker rmi -f $(docker images | grep '<none>' | tr -s ' ' | cut`
+> 1. docker rmi -f $(docker images | grep '<none>' | tr -s ' ' | cut
 
 ***删除镜像中包含关键字doss-api的镜像***
 
