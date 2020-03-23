@@ -120,11 +120,11 @@ mvn clean package -Pdist,native -DskipTests -Dtar  -Drequire.snappy
 ```
 **如下图编译成功**
 <div align="left">
-<img src="/images/posts/hadoop3/hadoop3.png" height="620" width="580" />
+<img src="/images/posts/hadoop3/hadoop3.png" height="620" width="780" />
 </div>
 **编码库全部都支持**
 <div align="left">
-<img src="/images/posts/hadoop3/code.png" height="280" width="580" />
+<img src="/images/posts/hadoop3/code.png" height="60" width="580" />
 </div>
 ### 支持LZO压缩
 
