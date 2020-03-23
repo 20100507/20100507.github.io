@@ -103,19 +103,19 @@ tag: 大数据Hadoop
 1. 检查cmake
 
 <div align="left">
-<img src="/images/posts/hadoop3/cmake.png" height="120" width="640" />  
+<img src="/images/posts/hadoop3/cmake.png" height="180" width="1180" />  
 </div>
 
 2. 检查protobuf
 
 <div align="left">
-<img src="/images/posts/hadoop3/protobuf.png" height="120" width="640" /> 
+<img src="/images/posts/hadoop3/protobuf.png" height="180" width="1180" /> 
 </div>
 
 3. 检查maven
 
 <div align="left">
-<img src="/images/posts/hadoop3/maven.png" height="120" width="640" />
+<img src="/images/posts/hadoop3/maven.png" height="180" width="1180" />
 </div>
 
 ### 编译Hadoop3.2.1源码
@@ -127,11 +127,11 @@ mvn clean package -Pdist,native -DskipTests -Dtar  -Drequire.snappy
 ```
 **如下图编译成功**
 <div align="left">
-<img src="/images/posts/hadoop3/hadoop3.png" height="620" width="780" />
+<img src="/images/posts/hadoop3/hadoop3.png" height="720" width="1180" />
 </div>
 **native库全部都支持**
 <div align="left">
-<img src="/images/posts/hadoop3/code.png" height="240" width="780" />
+<img src="/images/posts/hadoop3/code.png" height="340" width="1180" />
 </div>
 
 **编译好的安装包如下**
