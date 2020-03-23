@@ -43,7 +43,7 @@ tag: 大数据Hbase
 **观察hbase-ui正常启动**
 
 <div align="left">
-<img src="/images/posts/hbase-ranger/hbase.png" height="540" width="1040" />  
+<img src="/images/posts/hbase-ranger/hbase.png" height="540" width="1140" />  
 </div>
 
 **重新拷贝备份后的hbase的目录表数据到新的hbase的目录**
@@ -83,10 +83,10 @@ tag: 大数据Hbase
 > 1. `python2.7 /opt/phoenix/bin/sqlline.py 10.10.21.14:2181`
 
 <div align="left">
-<img src="/images/posts/hbase-ranger/phoenix.png" height="540" width="1040" />  
+<img src="/images/posts/hbase-ranger/phoenix.png" height="540" width="1140" />  
 </div>
 <div align="left">
-<img src="/images/posts/hbase-ranger/phoenix-select.png" height="540" width="1040" />  
+<img src="/images/posts/hbase-ranger/phoenix-select.png" height="540" width="1140" />  
 </div>
 
 **整合ranger&hbase 执行如下脚本  [原理协处理器拦截请求]**
@@ -96,13 +96,13 @@ tag: 大数据Hbase
 重启hbase观察web-ui,看到协处理器
 
 <div align="left">
-<img src="/images/posts/hbase-ranger/hbase-coprocessor.png" height="50" width="1040" />  
+<img src="/images/posts/hbase-ranger/hbase-coprocessor.png" height="50" width="1140" />  
 </div>
 
 **登录ranger配置权限**
 
 <div align="left">
-<img src="/images/posts/hbase-ranger/ranger.png" height="540" width="1040" />  
+<img src="/images/posts/hbase-ranger/ranger.png" height="430" width="1140" />  
 </div>
 
 ### 后记
