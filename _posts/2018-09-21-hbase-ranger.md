@@ -7,8 +7,8 @@ tag: 大数据Hbase
 
 ### 前言
     
-	为了适应ranger1.2对应的hbase1.3.1版本，只能降低hbase1.4.2版本。根本原因在于hbase1.4.2 的协处理器和1.3.2 协处理器的差别很大。ranger无法兼容hbase，修改ranger源代码的工作量比较大，因此离线降低hbase版本和Phoenix版本，
-  同时需要整合ranger1.2和降低后的hbase1.3.2版本。
+	为了适应ranger1.2对应的hbase1.3.1版本，只能降低hbase1.4.2版本。根本原因在于hbase1.4.2 的协处理器和1.3.2 协处理器的差别很大。ranger无法兼容hbase，修改ranger源代码<br/>
+	的工作量比较大，因此离线降低hbase版本和Phoenix版本，同时需要整合ranger1.2和降低后的hbase1.3.2版本。
 
 ### 操作
 
@@ -96,16 +96,16 @@ tag: 大数据Hbase
 重启hbase观察web-ui,看到协处理器
 
 <div align="left">
-<img src="/images/posts/hbase-ranger/hbase-coprocessor.png" height="120" width="640" />  
+<img src="/images/posts/hbase-ranger/hbase-coprocessor.png" height="50" width="940" />  
 </div>
 
 **登录ranger配置权限**
 
 <div align="left">
-<img src="/images/posts/hbase-ranger/ranger.png" height="120" width="640" />  
+<img src="/images/posts/hbase-ranger/ranger.png" height="430" width="840" />  
 </div>
 
 ### 后记
 
-采用社区版方案部署大数据集群最大的障碍是版本问题。从hbase1.3到1.4 小版本的跨越 hbase存储数据的结构没有发生变化，小版本降低对于hbase数据安全影
-响不大，但是停机降低hbase代价比较大，后期需要调研零停机降低hbase&phoenix版本。
+    采用社区版方案部署大数据集群最大的障碍是版本问题。从hbase1.3到1.4 小版本的跨越 hbase存储数据的结构没有发生变化，小版本降低对于hbase数据安全影<br/>
+    响不大，但是停机降低hbase代价比较大，后期需要调研零停机降低hbase&phoenix版本。
