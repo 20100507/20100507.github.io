@@ -42,15 +42,15 @@ tag: 容器Docker
 
 ***删除所有容器***
 
-> 1. docker rm `docker ps -a -q`
+> 1. docker rm \`docker ps -a -q`
 
 ***删除所有的镜像***
 
-> 1. docker rmi `docker images -q`
+> 1. docker rmi \`docker images -q`
 
 ***删除没有tag的所有镜像***
 
-> 1. docker rmi -f \$(docker images | grep '<none>' | tr -s ' ' | cut -d ' ' -f 3)
+> 1. docker rmi -f $(docker images \| grep '<none>' | tr -s ' ' | cut -d ' ' -f 3)
 
 ***删除镜像中包含关键字doss-api的镜像***
 
