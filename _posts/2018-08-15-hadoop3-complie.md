@@ -129,10 +129,14 @@ mvn clean package -Pdist,native -DskipTests -Dtar  -Drequire.snappy
 <div align="left">
 <img src="/images/posts/hadoop3/hadoop3.png" height="620" width="780" />
 </div>
-**编码库全部都支持**
+**native库全部都支持**
 <div align="left">
 <img src="/images/posts/hadoop3/code.png" height="240" width="780" />
 </div>
+
+**编译好的安装包如下**
+
+> 1. hadoop3.2.1安装包百度网盘链接: 链接：https://pan.baidu.com/s/15HC1ODQRMKjFGDpjK077WA 提取码：zbcs
 
 ### 支持LZO压缩
 
