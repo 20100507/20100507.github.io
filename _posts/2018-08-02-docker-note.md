@@ -44,11 +44,11 @@ tag: 容器Docker
 
 ***删除所有容器***
 
-> 1. `docker rm \`docker ps -a -q\``
+> 1. `docker rm '\'`docker ps -a -q'\'``
 
 ***删除所有的镜像***
 
-> 1. `docker rmi \`docker images -q\``
+> 1. `docker rmi '\'`docker images -q'\'``
 
 ***删除没有tag的所有镜像***
 
@@ -56,4 +56,4 @@ tag: 容器Docker
 
 ***删除镜像中包含关键字的镜像***
 
-> 1. `docker rmi --force \`docker images | grep doss-api | awk '{print $3}'\``    //其中doss-api为关键字
+> 1. `docker rmi --force '\'`docker images | grep doss-api | awk '{print $3}''\'``    //其中doss-api为关键字
