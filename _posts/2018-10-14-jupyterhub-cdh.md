@@ -35,6 +35,7 @@ tag: 机器学习
 **修改配置文件**
 
 > 修改 /etc/jupyterhub/jupyterhub_config.py
+>
 
   ```
   c.JupyterHub.ip = '10.10.21.7'
@@ -56,6 +57,8 @@ tag: 机器学习
   ```
 
 > 修改nginx配置文件
+>
+
 
 ```
 # For more information on configuration, see:
