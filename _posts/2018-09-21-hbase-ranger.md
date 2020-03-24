@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Hbase降低版本&集成Ranger"
-date: 2018-08-15   
+date: 2018-09-20   
 tag: 大数据Ranger
 ---
 
