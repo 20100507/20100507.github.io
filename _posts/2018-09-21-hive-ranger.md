@@ -15,7 +15,9 @@ tag: 大数据Ranger
 
 >   org.apache.hive.service.cli.HiveSQLException: Error while processing statement: Cannot modify ..** at runtime.
 >   It is not in list of params that are allowed to be modified at runtime
-	 
+>
+
+
 ### 解决方案
     
 	在hiveserver2.xml文件中,添加如下配置,为以下命令添加白名单
