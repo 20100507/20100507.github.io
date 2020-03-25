@@ -165,5 +165,5 @@ http {
 
 ### 总结
   
-  裸机跑jupyterhub有宕机的风险,考虑要修改为jupyterhub on kubernetes方式,代替裸机资源利用率更高,安全性更强.
+	裸机跑jupyterhub有宕机的风险,考虑要修改为jupyterhub on kubernetes方式,代替裸机资源利用率更高,安全性更强.
 
