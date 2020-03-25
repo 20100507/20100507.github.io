@@ -15,6 +15,7 @@ tag: 大数据Hive
 
 > 1. 在元数据库中执行如下命令
 
+<br/>
 
 ```
 alter table COLUMNS_V2 modify column COMMENT varchar(256) character set utf8;
