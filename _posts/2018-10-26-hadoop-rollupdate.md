@@ -69,8 +69,9 @@ tag: 大数据Hadoop
 > 2. yarn-daemon.sh start resourcemanager
 > 3. yarn-daemon.sh stop nodemanager
 > 4. yarn-daemon.sh start nodemanger
->
-  如下图为yarn升级完毕
+
+ 如下图为yarn升级完毕
+
 <br/>
 <div align="left">
 <img src="/images/posts/hadoop3/rollupdate4.png" height="380" width="1180" />  
