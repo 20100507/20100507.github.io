@@ -38,7 +38,6 @@ tag: 机器学习
 > 
 
 <br/>
-<br/>
 
   ```
   c.JupyterHub.ip = '10.10.21.7'
@@ -62,7 +61,6 @@ tag: 机器学习
 > 修改nginx配置文件
 > 
 
-<br/>
 <br/>
 
 ```
@@ -153,8 +151,11 @@ http {
 **书写代码注意事项**
 
 >  必须加入如下环境变量配置
-`export HADOOP_CONF_DIR=/etc/hadoop/conf.cloudera.yarn/`
+>
+<br/>
+`export HADOOP_CONF_DIR=/etc/hadoop/conf.cloudera.yarn/`<br/>
 `export YARN_CONF_DIR=/etc/hadoop/conf.cloudera.yarn/` 
+
 
 ### 附录
 
