@@ -63,87 +63,49 @@ tag: 大数据Hadoop
 9. Hbase 表无法写入查询失败
 
 > 1. 问题描述：由于zookeeper宕机，观察hbase UI 如下错误
-<br/>
-```
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-
-sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-
-sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-
-java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-
-org.apache.hadoop.hbase.ipc.RemoteWithExtrasException.instantiateException(RemoteWithExtrasException.java:95)
-
-org.apache.hadoop.hbase.ipc.RemoteWithExtrasException.unwrapRemoteException(RemoteWithExtrasException.java:85)
-
-org.apache.hadoop.hbase.protobuf.ProtobufUtil.makeIOExceptionOfException(ProtobufUtil.java:368)
-
-org.apache.hadoop.hbase.protobuf.ProtobufUtil.getRemoteException(ProtobufUtil.java:330)
-
-org.apache.hadoop.hbase.client.HBaseAdmin.getCompactionState(HBaseAdmin.java:3454)
-
-org.apache.hadoop.hbase.generated.master.table_jsp._jspService(table_jsp.java:283)
-
-org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:98)
-
-javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
-
-org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
-
-org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1221)
-
-org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter.doFilter(StaticUserWebFilter.java:113)
-
-org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
-
-org.apache.hadoop.hbase.http.ClickjackingPreventionFilter.doFilter(ClickjackingPreventionFilter.java:48)
-
-org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
-
-org.apache.hadoop.hbase.http.HttpServer$QuotingInputFilter.doFilter(HttpServer.java:1435)
-
-org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
-
-org.apache.hadoop.hbase.http.NoCacheFilter.doFilter(NoCacheFilter.java:49)
-
-org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
-
-org.apache.hadoop.hbase.http.NoCacheFilter.doFilter(NoCacheFilter.java:49)
-
-org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
-
-org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399)
-
-org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
-
-org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
-
-org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
-
-org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
-
-org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
-
-org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
-
-org.mortbay.jetty.Server.handle(Server.java:326)org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
-
-org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
-
-org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
-
-org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
-
-org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
-
-org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
-
-org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582) Unknown
-```
-<br/>
 > 2. 问题观察分析：由于region分裂和zookeeper通讯失败，hregionserver 宕机，该表的region开始迁移，多次迁移后，依然region存在宕机，达到重试最高次数，表直接损坏无法写入
 > 3. 重新修改zookeeper地址,启动zk
+
+```
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+org.apache.hadoop.hbase.ipc.RemoteWithExtrasException.instantiateException(RemoteWithExtrasException.java:95)
+org.apache.hadoop.hbase.ipc.RemoteWithExtrasException.unwrapRemoteException(RemoteWithExtrasException.java:85)
+org.apache.hadoop.hbase.protobuf.ProtobufUtil.makeIOExceptionOfException(ProtobufUtil.java:368)
+org.apache.hadoop.hbase.protobuf.ProtobufUtil.getRemoteException(ProtobufUtil.java:330)
+org.apache.hadoop.hbase.client.HBaseAdmin.getCompactionState(HBaseAdmin.java:3454)
+org.apache.hadoop.hbase.generated.master.table_jsp._jspService(table_jsp.java:283)
+org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:98)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1221)
+org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter.doFilter(StaticUserWebFilter.java:113)
+org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+org.apache.hadoop.hbase.http.ClickjackingPreventionFilter.doFilter(ClickjackingPreventionFilter.java:48)
+org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+org.apache.hadoop.hbase.http.HttpServer$QuotingInputFilter.doFilter(HttpServer.java:1435)
+org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+org.apache.hadoop.hbase.http.NoCacheFilter.doFilter(NoCacheFilter.java:49)
+org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+org.apache.hadoop.hbase.http.NoCacheFilter.doFilter(NoCacheFilter.java:49)
+org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399)
+org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
+org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+org.mortbay.jetty.Server.handle(Server.java:326)org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582) Unknown
+```
 
 ## 总结
 
