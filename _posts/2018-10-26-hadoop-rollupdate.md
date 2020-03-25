@@ -81,4 +81,4 @@ tag: 大数据Hadoop
 
 ### 参考
 
-*https://hadoop.apache.org/docs/r2.8.5/hadoop-project-dist/hadoop-hdfs/HdfsRollingUpgrade.html
+* https://hadoop.apache.org/docs/r2.8.5/hadoop-project-dist/hadoop-hdfs/HdfsRollingUpgrade.html
