@@ -60,7 +60,7 @@ tag: 大数据Hadoop
 
 <br/>
 <div align="left">
-<img src="/images/posts/hadoop3/rollupdate3.png" height="280" width="1180" />  
+<img src="/images/posts/hadoop3/rollupdate3.png" height="580" width="1180" />  
 </div>
 
 ### 重启YARN
