@@ -152,7 +152,6 @@ http {
 
 >  必须加入如下环境变量配置
 >
-<br/>
 `export HADOOP_CONF_DIR=/etc/hadoop/conf.cloudera.yarn/`<br/>
 `export YARN_CONF_DIR=/etc/hadoop/conf.cloudera.yarn/` 
 
