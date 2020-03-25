@@ -26,16 +26,19 @@ tag: 机器学习
   
 **修改环境变量**
 
-`export SPARK_HOME=/opt/cloudera/parcels/SPARK2/lib/spark2`
-`export PYSPARK_SUBMIT_ARGS='--master yarn --deploy-mode client --num-executors 3 --executor-cores 1 --executor-memory 2G  pyspark-shell'`
-`export HADOOP_CONF_DIR=/etc/hadoop/conf.cloudera.yarn/`
-`export YARN_CONF_DIR=/etc/hadoop/conf.cloudera.yarn/`
-`export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.4-src.zip:$SPARK_HOME/python/lib/pyspark.zip:$PYTHONPATH`
+`export SPARK_HOME=/opt/cloudera/parcels/SPARK2/lib/spark2`<br/>
+`export PYSPARK_SUBMIT_ARGS='--master yarn --deploy-mode client --num-executors 3 --executor-cores 1 --executor-memory 2G  pyspark-shell'`<br/>
+`export HADOOP_CONF_DIR=/etc/hadoop/conf.cloudera.yarn/`<br/>
+`export YARN_CONF_DIR=/etc/hadoop/conf.cloudera.yarn/`<br/>
+`export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.4-src.zip:$SPARK_HOME/python/lib/pyspark.zip:$PYTHONPATH`<br/>
  
 **修改配置文件**
 
 > 修改 /etc/jupyterhub/jupyterhub_config.py
->
+> 
+
+<br/>
+<br/>
 
   ```
   c.JupyterHub.ip = '10.10.21.7'
@@ -57,8 +60,10 @@ tag: 机器学习
   ```
 
 > 修改nginx配置文件
->
+> 
 
+<br/>
+<br/>
 
 ```
 # For more information on configuration, see:
