@@ -140,7 +140,7 @@ http {
 
 > nohup /opt/anaconda/bin/python /opt/anaconda/bin/jupyterhub --config=/etc/jupyterhub/jupyterhub_config.py --no-ssl > /dev/null 2>&1 &
 
-### 访问
+### 访问测试
 
 **访问localhost如下图**
 
