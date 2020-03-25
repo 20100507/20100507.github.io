@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hadoop运维"
+title: "Hadoop trouble-shooting"
 date: 2018-10-21 
 tag: 大数据Hadoop
 ---
