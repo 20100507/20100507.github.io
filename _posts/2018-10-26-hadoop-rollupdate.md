@@ -7,15 +7,14 @@ tag: 大数据Hadoop
 
 ### 前言
     
-	Hadoop2.7.6已经落后Hadoop主流版本好几个版本,目前主流的Hadoop版本为2.8.x,2.9.x,2.10.x,3.x.决定滚动升级数据平台部的
-	Hadoop版本为2.8.5,采用零停机方式升级.笔者的Hadoop版本为2.7.6,需要注意Hadoop版本滚动升级最低版本为2.4.x.并且在升级的
-	过程中,不要动JournalNode服务,如果升级JournalNode服务可能导致集群宕机.
+	Hadoop2.7.6已经落后Hadoop主流版本好几个版本,目前主流的Hadoop版本为2.8.x,2.9.x,2.10.x,3.x.决定滚动升级数据平台部的Hadoop版本为2.8.5,采用零停机方式升级.
+	笔者的Hadoop版本为2.7.6,需要注意Hadoop版本滚动升级最低版本为2.4.x.并且在升级的过程中,不要动JournalNode服务,如果升级JournalNode服务可能导致集群宕机.
 
 ### 滚动升级NameNode
 
 **备份元数据**
 
-***在Active NameNode执行如下命令**
+***在Active NameNode执行如下命令***
 
 > `hdfs dfsadmin -rollingUpgrade prepare`
 
@@ -26,13 +25,13 @@ tag: 大数据Hadoop
 ***或者观察web-ui 如下，回滚的镜像已经创建***
 
 <div align="left">
-<img src="/images/posts/hadoop3/rollupdate1.png" height="180" width="1180" />  
+<img src="/images/posts/hadoop3/rollupdate1.png" height="280" width="1180" />  
 </div>
 
 <br/>
 
 <div align="left">
-<img src="/images/posts/hadoop3/rollupdate2.png" height="180" width="1180" />  
+<img src="/images/posts/hadoop3/rollupdate2.png" height="280" width="1180" />  
 </div>
 
 > 1. 停止active namenode nn1 替换相关jar包 /opt/hadoop/share/hadoop/下所有的类库
@@ -58,11 +57,10 @@ tag: 大数据Hadoop
   执行如下命令确认升级完毕
   
 > 1. `hdfs dfsadmin -rollingUpgrade finalize`
-> 
-<br/>
 
+<br/>
 <div align="left">
-<img src="/images/posts/hadoop3/rollupdate3.png" height="180" width="1180" />  
+<img src="/images/posts/hadoop3/rollupdate3.png" height="280" width="1180" />  
 </div>
 
 ### 重启YARN
@@ -79,7 +77,7 @@ tag: 大数据Hadoop
 </div>
 
 ### 总结
-	Hadoop2.7.6滚动升级难度不是很高,后期需要考虑升级Hadoop3.x,滴滴在最近已经有实践.
+	Hadoop2.7.6滚动升级难度不是很高,后期需要考虑升级Hadoop3.x,滴滴在最近已经有实践.可以参考借鉴.
 
 ### 参考
 
