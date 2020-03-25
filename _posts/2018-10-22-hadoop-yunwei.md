@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hadoop运维"
-date: 2018-10-20  
+date: 2018-10-21 
 tag: 大数据Hadoop
 ---
 
