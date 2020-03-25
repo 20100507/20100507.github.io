@@ -65,7 +65,7 @@ tag: 大数据Hadoop
 > 1. 问题描述：由于zookeeper宕机，观察hbase UI 如下错误
 > 2. 问题观察分析：由于region分裂和zookeeper通讯失败，hregionserver 宕机，该表的region开始迁移，多次迁移后，依然region存在宕机，达到重试最高次数，表直接损坏无法写入
 > 3. 重新修改zookeeper地址,启动zk
-
+<br/>
 ```
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
