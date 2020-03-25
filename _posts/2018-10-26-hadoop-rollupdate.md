@@ -60,7 +60,7 @@ tag: 大数据Hadoop
 
 <br/>
 <div align="left">
-<img src="/images/posts/hadoop3/rollupdate3.png" height="580" width="1180" />  
+<img src="/images/posts/hadoop3/rollupdate3.png" height="380" width="1180" />  
 </div>
 
 ### 重启YARN
@@ -73,7 +73,7 @@ tag: 大数据Hadoop
   如下图为yarn升级完毕
 <br/>
 <div align="left">
-<img src="/images/posts/hadoop3/rollupdate4.png" height="180" width="1180" />  
+<img src="/images/posts/hadoop3/rollupdate4.png" height="380" width="1180" />  
 </div>
 
 ### 总结
