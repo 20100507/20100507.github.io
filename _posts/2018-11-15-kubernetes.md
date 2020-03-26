@@ -15,7 +15,7 @@ tag: 容器Kubernetes
 > kubectl get ep
 
    删除被驱逐的pod
-> kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod
+> kubectl get pods \| grep Evicted | awk \'{print $1}' | xargs kubectl delete pod
 
    创建https证书密文
 > kubectl create secret tls nginx-test --cert=tls.crt --key=tls.key
@@ -61,17 +61,17 @@ ps:token 过期的话会加入不成功提示Unauthorized，换个不过期的to
 
   标记污点
 
->  kubectl taint nodes bitnei-saas-k8s-node14 key=value:NoSchedule
->  kubectl taint nodes bitnei-saas-k8s-node15 key=value:NoSchedule
->  kubectl taint nodes bitnei-saas-k8s-node15 key=value:NoExecute
->  kubectl taint nodes bitnei-saas-k8s-node14 key=value:NoExecute
+> 1. kubectl taint nodes bitnei-saas-k8s-node14 key=value:NoSchedule
+> 2. kubectl taint nodes bitnei-saas-k8s-node15 key=value:NoSchedule
+> 3. kubectl taint nodes bitnei-saas-k8s-node15 key=value:NoExecute
+> 4. kubectl taint nodes bitnei-saas-k8s-node14 key=value:NoExecute
 
   删除污点
 
-> kubectl taint nodes bitnei-saas-k8s-node14 key=value:NoSchedule-
-> kubectl taint nodes bitnei-saas-k8s-node15 key=value:NoSchedule-
-> kubectl taint nodes bitnei-saas-k8s-node15 key=value:NoExecute-
-> kubectl taint nodes bitnei-saas-k8s-node14 key=value:NoExecute-
+> 1. kubectl taint nodes bitnei-saas-k8s-node14 key=value:NoSchedule-
+> 2. kubectl taint nodes bitnei-saas-k8s-node15 key=value:NoSchedule-
+> 3. kubectl taint nodes bitnei-saas-k8s-node15 key=value:NoExecute-
+> 4. kubectl taint nodes bitnei-saas-k8s-node14 key=value:NoExecute-
 
 
 ### 私有化仓库地址修改
