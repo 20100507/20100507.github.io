@@ -1,6 +1,6 @@
 # Basic
 title: 边城博客
-subtitle: 博客
+subtitle: 老男孩
 description: 欢迎来到我的个人博客~
 # 头像里面的标题
 avatarTitle: BQ
@@ -25,7 +25,7 @@ social:
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
 baidu:
-    id: xxxx  
+    id: 85b638fe4fac4f6756b26090d584fa1f  
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
