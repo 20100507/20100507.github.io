@@ -130,26 +130,28 @@ ps:token 过期的话会加入不成功提示Unauthorized，换个不过期的to
 
 **卸载k8s**
 
-> kubeadm reset -f
-> modprobe -r ipip
-> lsmod
-> rm -rf ~/.kube/
-> rm -rf /etc/kubernetes/
-> rm -rf /etc/systemd/system/kubelet.service.d
-> rm -rf /etc/systemd/system/kubelet.service
-> rm -rf /usr/bin/kube*
-> rm -rf /etc/cni
-> rm -rf /opt/cni
-> rm -rf /var/lib/etcd
-> rm -rf /var/etcd
+> 1. kubeadm reset -f
+> 2. modprobe -r ipip
+> 3. lsmod
+> 4. rm -rf ~/.kube/
+> 5. rm -rf /etc/kubernetes/
+> 6. rm -rf /etc/systemd/system/kubelet.service.d
+> 7. rm -rf /etc/systemd/system/kubelet.service
+> 8. rm -rf /usr/bin/kube*
+> 9. rm -rf /etc/cni
+> 10. rm -rf /opt/cni
+> 11. rm -rf /var/lib/etcd
+> 12. rm -rf /var/etcd
 
 
 ### kubernetes日志收集解决方案
 
-    `kubernetes`日志收集可以采用挂载NFS方式收集,或者采用守护容器的方式,启动`filebeat`采集日志发送到ES中,来查询日志.相对于第一种方案
+  `kubernetes`日志收集可以采用挂载NFS方式收集,或者采用守护容器的方式,启动`filebeat`采集日志发送到ES中,来查询日志.相对于第一种方案
 在生产环境测试发现对pod的运行会产生一定的速度响应上的影响,第二种方案会消耗一部分每一个pod的资源.生产环境建议采用第二种方案.以下为
 采集`nginx`日志为例,采集jar日志,或者`Python`,`golang`应用日志可以触类旁通.
-  
+
+<br/>
+
 1. 搭建ES比较简单,注意修改linux系统文件打开的限制.在此笔者略过.
 
 2. 如下为nginx pods配置文件,请读者不要直接复制粘贴,注意yaml文件的缩进
