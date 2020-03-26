@@ -143,6 +143,7 @@ ps:token 过期的话会加入不成功提示Unauthorized，换个不过期的to
 > 11. rm -rf /var/lib/etcd
 > 12. rm -rf /var/etcd
 
+<br/>
 
 ### kubernetes日志收集解决方案
 
