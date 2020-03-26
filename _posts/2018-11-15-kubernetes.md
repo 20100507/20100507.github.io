@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kubernetes记录"
-date: 2018-10-26
+date: 2018-11-15
 tag: 容器Kubernetes
 ---
 
