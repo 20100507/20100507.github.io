@@ -15,7 +15,7 @@ tag: 容器Kubernetes
 > 2. kubectl get ep
 
    删除被驱逐的pod
-> 1. kubectl get pods \| grep Evicted | awk '{print $1}' | xargs kubectl delete pod
+> 1. kubectl get pods \| grep Evicted \| awk '{print $1}' \| xargs kubectl delete pod
 
    创建https证书密文
 > kubectl create secret tls nginx-test --cert=tls.crt --key=tls.key
@@ -147,7 +147,7 @@ ps:token 过期的话会加入不成功提示Unauthorized，换个不过期的to
 ### kubernetes日志收集解决方案
 
 
-`kubernetes`日志收集可以采用挂载NFS方式收集,或者采用守护容器的方式,启动`filebeat`采集日志发送到ES中,来查询日志.相对于第一种方案
+   `kubernetes`日志收集可以采用挂载NFS方式收集,或者采用守护容器的方式,启动`filebeat`采集日志发送到ES中,来查询日志.相对于第一种方案
 在生产环境测试发现对pod的运行会产生一定的速度响应上的影响,第二种方案会消耗一部分每一个pod的资源.生产环境建议采用第二种方案.以下为
 采集`nginx`日志为例,采集jar日志,或者`Python`,`golang`应用日志可以触类旁通.
 
