@@ -39,7 +39,10 @@ tag: Nginx
   gzip on;
   gzip_min_length 1k;
   gzip_comp_level 3;
-  gzip_types text/plain application/javascript application/x-javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png application/vnd.ms-fontobject font/ttf font/opentype font/x-woff image/svg+xml;
+  gzip_types text/plain application/javascript application/x-javascript 
+  text/css application/xml text/javascript 
+  application/x-httpd-php image/jpeg image/gif image/png application/vnd.ms-fontobject
+  font/ttf font/opentype font/x-woff image/svg+xml;
   gzip_vary on;   
   gzip_buffers 32 4k;
   
