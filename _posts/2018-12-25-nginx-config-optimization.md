@@ -13,11 +13,11 @@ tag: Nginx
 
 **Request Entity Too Large Ingress Nginx**
 
-*普通nginx配置
+* 普通nginx配置
 
 > `client_max_body_size 20M;`
 
-*ingress nginx配置
+* ingress nginx配置
 
 ```
   apiVersion: extensions/v1beta1
@@ -32,7 +32,7 @@ tag: Nginx
 
 **开启gzip压缩**
 
-*普通nginx配置
+* 普通nginx配置
 
 ```
 gzip on;
@@ -45,7 +45,7 @@ gzip on;
 
 **Get请求太长&Post Body太长**
 
-*普通nginx配置
+* 普通nginx配置
 
 ```
 client_max_body_size 500M;
@@ -55,7 +55,7 @@ large_client_header_buffers 4 51200k;
 
 **增加后端响应超时时长**
 
-*普通nginx配置
+* 普通nginx配置
 
 ```
 proxy_connect_timeout 90;
@@ -65,7 +65,7 @@ proxy_read_timeout 90;
 ```
 **允许跨域&携带cookie**
 
-*普通nginx配置
+* 普通nginx配置
 
 ```
 proxy_pass_header Set-Cookie;
@@ -79,7 +79,7 @@ proxy_set_header Host $proxy_host;
 
 **if条件判断**
 
-*普通nginx配置
+* 普通nginx配置
 
 ```
  set $flag 0;
@@ -103,7 +103,7 @@ proxy_set_header Host $proxy_host;
 
 **二级目录配置**
 
-*普通nginx配置
+* 普通nginx配置
 
 ```
 location ^~ /bit {
@@ -114,7 +114,7 @@ location ^~ /bit {
 
 **添加header**
 
-*普通nginx配置
+* 普通nginx配置
 
 ```
 location /xx/{
@@ -125,7 +125,7 @@ location /xx/{
 
 **404跳转首页**
 
-*普通nginx配置
+* 普通nginx配置
 
 ```
 location ^~ /bit {
