@@ -15,8 +15,9 @@ tag: Nginx
 
 * 普通nginx配置
 
-> `client_max_body_size 20M;`
-
+```
+  client_max_body_size 20M;
+```
 * ingress nginx配置
 
 ```
