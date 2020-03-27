@@ -35,12 +35,13 @@ tag: Nginx
 * 普通nginx配置
 
 ```
-gzip on;
-    gzip_min_length 1k;
-    gzip_comp_level 3;
-    gzip_types text/plain application/javascript application/x-javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png application/vnd.ms-fontobject font/ttf font/opentype font/x-woff image/svg+xml;
-    gzip_vary on;   
-    gzip_buffers 32 4k;
+  gzip on;
+  gzip_min_length 1k;
+  gzip_comp_level 3;
+  gzip_types text/plain application/javascript application/x-javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png application/vnd.ms-fontobject font/ttf font/opentype font/x-woff image/svg+xml;
+  gzip_vary on;   
+  gzip_buffers 32 4k;
+  
 ```
 
 **Get请求太长&Post Body太长**
@@ -48,9 +49,9 @@ gzip on;
 * 普通nginx配置
 
 ```
-client_max_body_size 500M;
-client_header_buffer_size 51200k;
-large_client_header_buffers 4 51200k;
+  client_max_body_size 500M;
+  client_header_buffer_size 51200k;
+  large_client_header_buffers 4 51200k;
 ```
 
 **增加后端响应超时时长**
@@ -58,9 +59,9 @@ large_client_header_buffers 4 51200k;
 * 普通nginx配置
 
 ```
-proxy_connect_timeout 90;
-proxy_send_timeout 90;
-proxy_read_timeout 90;
+  proxy_connect_timeout 90;
+  proxy_send_timeout 90;
+  proxy_read_timeout 90;
 
 ```
 **允许跨域&携带cookie**
@@ -68,12 +69,12 @@ proxy_read_timeout 90;
 * 普通nginx配置
 
 ```
-proxy_pass_header Set-Cookie;
-proxy_pass_header Host;
-proxy_pass_header Access-Control-Allow-Origin;
-proxy_pass_header Access-Control-Allow-Credentials;
-proxy_pass_header Access-Control-Allow-Headers;
-proxy_set_header Host $proxy_host;
+  proxy_pass_header Set-Cookie;
+  proxy_pass_header Host;
+  proxy_pass_header Access-Control-Allow-Origin;
+  proxy_pass_header Access-Control-Allow-Credentials;
+  proxy_pass_header Access-Control-Allow-Headers;
+  proxy_set_header Host $proxy_host;
 
 ```
 
@@ -106,9 +107,9 @@ proxy_set_header Host $proxy_host;
 * 普通nginx配置
 
 ```
-location ^~ /bit {
-   root /opt/static/;
-}
+  location ^~ /bit {
+     root /opt/static/;
+  }
 
 ```
 
@@ -117,9 +118,9 @@ location ^~ /bit {
 * 普通nginx配置
 
 ```
-location /xx/{
-    add_header 'Access-Control-Expose-Headers' 'to-sec,pub';
-}
+  location /xx/{
+     add_header 'Access-Control-Expose-Headers' 'to-sec,pub';
+  }
 
 ```
 
@@ -128,11 +129,11 @@ location /xx/{
 * 普通nginx配置
 
 ```
-location ^~ /bit {
+  location ^~ /bit {
      root /opt/static/;
      index index.html; 
      error_page  404  /index.html;
-}
+  }
 
 ```
 
