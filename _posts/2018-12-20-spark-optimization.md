@@ -61,6 +61,6 @@ tag: 大数据Spark
 
 ### 参考
 
-*https://issues.apache.org/jira/browse/HIVE-21752
-*https://issues.apache.org/jira/browse/SPARK-17398
+* https://issues.apache.org/jira/browse/HIVE-21752
+* https://issues.apache.org/jira/browse/SPARK-17398
 
