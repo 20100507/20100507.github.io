@@ -52,7 +52,7 @@ tag: 大数据Phoenix
 > 2. `cp /opt/hbase/conf/hbase-site.xml /opt/phoenix/bin/`
 > 3. `python2.7 /opt/phoenix/bin/sqlline.py`
 
-**功能测试**
+### 功能测试
 
 * 创建Hbase表
 
@@ -89,7 +89,7 @@ tag: 大数据Phoenix
 > 1. `SELECT * FROM test.FACT_FORWARD_TEST LIMIT 2;`
 
 
-**优化配置**
+### 优化配置
 
 * 一次性创建大量数据的索引超时错误,修改hbase-site.xml文件
 
