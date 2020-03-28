@@ -34,7 +34,7 @@ tag: 大数据Spark
 * 调整网络超时时长                  --conf spark.network.timeout
 * 调整序列化设置                    --conf spark.network.timeout
 
-** SparkStreaming调优**
+**SparkStreaming调优**
 
 * 使用直连方式 kafka partition数量决定了task并行度,适当增加partition
 * 适当调整每次拉取数据量和拉取的间隔
