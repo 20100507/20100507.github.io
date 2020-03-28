@@ -24,7 +24,7 @@ tag: Redis
 
 > 1. gem install redis-dump -V
 > 2. redis-dump -u :mypassword@localhost:6379 -d 1 >test.json
-> 3. cat 6380.json | redis-load -u IP6:6380 -d 0
+> 3. cat 6380.json \| redis-load -u IP6:6380 -d 0
 
 ### 总结
 
