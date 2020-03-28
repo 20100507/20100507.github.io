@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NFS install"
+title: "NFS 安装"
 date: 2019-01-20 
 tag: NFS
 ---
