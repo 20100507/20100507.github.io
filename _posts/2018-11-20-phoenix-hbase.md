@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Phoenix&Hbase"
+title: "Phoenix &Hbase"
 date: 2018-11-20  
 tag: 大数据Phoenix
 ---

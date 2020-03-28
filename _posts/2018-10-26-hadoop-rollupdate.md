@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hadoop2.7.6滚动升级Hadoop2.8.5"
+title: "Hadoop2.7.6 滚动升级Hadoop2.8.5"
 date: 2018-10-26
 tag: 大数据Hadoop
 ---

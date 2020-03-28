@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JupyterHub&CDH"
+title: "JupyterHub &CDH"
 date: 2018-10-14   
 tag: 机器学习
 ---

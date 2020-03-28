@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nginx配置优化"
+title: "Nginx 配置优化"
 date: 2018-12-25  
 tag: Nginx
 ---

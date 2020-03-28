@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GitLab迁移"
+title: "GitLab 迁移"
 date: 2018-07-08   
 tag: 数据迁移 
 ---

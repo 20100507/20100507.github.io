@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: "Ranger集成Hive使用"
+title: "Ranger 集成Hive使用"
 date: 2018-08-20   
 tag: 大数据Ranger
 ---
