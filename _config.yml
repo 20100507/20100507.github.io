@@ -11,7 +11,7 @@ url: "http://www.bianqi.info"
 # Comment
 comment:
     # disqus: bianqi-info
-    gitment: https://github.com/20100507/20100507.github.io // 需要修改 comments.html中的client_id和client_secret
+    gitment: 20100507.github.io // 需要修改 comments.html中的client_id和client_secret
     #uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
