@@ -203,7 +203,7 @@ public class CustomAuthenticator implements PasswdAuthenticationProvider {
 如下图为执行后的效果
 
 <div align="left">
-<img src="/images/posts/hive/hive01.png" height="140" width="440" />  
+<img src="/images/posts/hive/hive01.png" height="340" width="1440" />  
 </div>
 
 ### 注意
