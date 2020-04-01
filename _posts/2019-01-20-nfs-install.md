@@ -2,7 +2,7 @@
 layout: post
 title: "NFS 安装"
 date: 2019-01-20 
-tag: NFS
+tag: 网络存储
 ---
 
 ### 前言

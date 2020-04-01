@@ -2,7 +2,7 @@
 layout: post
 title: "Hadoop trouble-shooting"
 date: 2018-10-21 
-tag: 大数据Hadoop
+tag: 大数据技术
 ---
 
 ### 前言

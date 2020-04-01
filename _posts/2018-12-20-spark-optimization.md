@@ -2,7 +2,7 @@
 layout: post
 title: "Spark 优化"
 date: 2018-12-20  
-tag: 大数据Spark
+tag: 大数据技术
 ---
 
 ### 前言

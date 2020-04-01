@@ -2,7 +2,7 @@
 layout: post
 title: "Docker 常用操作"
 date: 2018-08-02   
-tag: 容器Docker
+tag: 容器化技术
 ---
 
 ### 前言

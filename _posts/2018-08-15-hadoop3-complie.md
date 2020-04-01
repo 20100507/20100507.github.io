@@ -2,7 +2,7 @@
 layout: post
 title: "Hadoop3.2.1 编译(支持所有native库)"
 date: 2018-08-15   
-tag: 大数据Hadoop
+tag: 大数据技术
 ---
 
 ### 前言

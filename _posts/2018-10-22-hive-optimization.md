@@ -2,7 +2,7 @@
 layout: post
 title: "Hive 配置与调优"
 date: 2018-10-28 
-tag: 大数据Hive
+tag: 大数据技术
 ---
 
 ### 前言

@@ -2,7 +2,7 @@
 layout: post
 title: "Phoenix &Hbase"
 date: 2018-11-20  
-tag: 大数据Phoenix
+tag: 大数据技术
 ---
 
 ### 前言

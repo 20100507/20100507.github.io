@@ -2,7 +2,7 @@
 layout: post
 title: "Ranger 集成Hive使用"
 date: 2018-08-20   
-tag: 大数据Ranger
+tag: 大数据技术
 ---
 
 ### 前言

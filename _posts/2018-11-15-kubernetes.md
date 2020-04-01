@@ -2,7 +2,7 @@
 layout: post
 title: "Kubernetes 记录"
 date: 2018-11-15
-tag: 容器Kubernetes
+tag: 容器化技术
 ---
 
 ### 前言
