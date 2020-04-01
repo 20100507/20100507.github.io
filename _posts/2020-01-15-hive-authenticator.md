@@ -23,9 +23,6 @@ tag: 大数据技术
 
 * 开启用户自定义认证
 
-> 1. `vim /opt/hive/conf/hiveserver2-site.xml`
-
-
 ```
 <property>
      <name>hive.server2.authentication</name>
@@ -215,4 +212,4 @@ public class CustomAuthenticator implements PasswdAuthenticationProvider {
 
 ### 总结
 
-	以上记录了NTP安装过程,后期更新内网ntp安装,敬请期待.希望本文对读者起到帮助作用.
+	以上记录了HiveServer2基于MySQL认证方式.希望本文对读者起到帮助作用.
