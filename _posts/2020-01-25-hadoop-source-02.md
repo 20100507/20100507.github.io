@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hadoop源码分析-02-Configuration(配置结构)"
+title: "Hadoop源码分析-02-Configuration"
 date: 2020-01-25
 tag: Hadoop源码分析
 ---
@@ -15,8 +15,9 @@ tag: Hadoop源码分析
 
 **源码类解释**
 
-![Hadoop01](F:\github\20100507.github.io\20100507.github.io\images\posts\hadoop-source-02\Hadoop01.png)
-
+<div align="left">
+<img src="/images/posts/hadoop-source-02/Hadoop01.png" height="920" width="1180" />
+</div>
 > 1.  ConfigRedactor  存储修改敏感信息
 > 2.  Configurable  可配置的顶层接口
 > 3.  Configuration 核心引导配置类

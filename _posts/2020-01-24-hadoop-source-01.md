@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hadoop源码分析-01-HDFS启动过程"
+title: "Hadoop源码分析-01-Startup Progress"
 date: 2020-01-24
 tag: Hadoop源码分析
 ---
