@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hadoop源码分析-03-IPC原理"
+title: "Hadoop源码分析-04-IPC原理"
 date: 2020-01-30
 tag: Hadoop源码分析
 ---
@@ -227,7 +227,7 @@ Listener(int port) throws IOException {
   
 ```   
 
-+ `Handler` 线程用来处理队列的call.我们可以查看到run方法中如下代码:
+ + `Handler` 线程用来处理队列的call.我们可以查看到run方法中如下代码:
 
 ```
   //从队列中pop出去
@@ -237,7 +237,7 @@ Listener(int port) throws IOException {
       call.getClientStateId() > alignmentContext.getLastSeenStateId())
 ```
 
-+ `Responder` 也是线程类 他的作用是发送RPC的响应的给客户端.我们查看一下`run`方法
+ + `Responder` 也是线程类 他的作用是发送RPC的响应的给客户端.我们查看一下`run`方法
 
 ```
     @Override
@@ -336,7 +336,7 @@ Listener(int port) throws IOException {
     }
  ```
 
-+ 最后提到的是`Connection` 也是Server类的内部类,其中一个Connection包括多个
+ + 最后提到的是`Connection` 也是Server类的内部类,其中一个Connection包括多个
 `RpcCall`.
 
 最后Client类笔者不再做出具体的分析,感兴趣的读者可以下载源代码阅读.
@@ -346,28 +346,28 @@ Listener(int port) throws IOException {
 **整体流程图如下**
 
 <div align="left">
-<img src="/images/posts/hadoop-source-04/hadoop01.png" height="920" width="1180" />
+<img src="/images/posts/hadoop-source-04/hadoop01.png" height="320" width="1180" />
 </div>
 
 Server接收Call调用负责接收来自RPC Client的调用请求，编码成Call对象后放入到Call队列中。这一过程由Listener线程完成。具体步骤：
 
-> Listener线程监视RPC Client发送过来的数据。
-> 当有数据可以接收时，调用Connection的readAndProcess方法。
-> Connection边接收边对数据进行处理，如果接收到一个完整的Call包，则构建一个Call对象PUSH到Call队列中，由Handler线程来处理Call队列中的所有Call。
+> 1. Listener线程监视RPC Client发送过来的数据。
+> 2. 当有数据可以接收时，调用Connection的readAndProcess方法。
+> 3. Connection边接收边对数据进行处理，如果接收到一个完整的Call包，则构建一个Call对象PUSH到Call队列中，由Handler线程来处理Call队列中的所有Call。
 
 Server处理Call调用负责处理Call队列中的每个调用请求，由Handler线程完成：
 
-> Handler线程监听Call队列，如果Call队列非空，按FIFO规则从Call队列取出Call。
-> 将Call交给RPC.Server处理。
-> 借助JDK提供的Method，完成对目标方法的调用，目标方法由具体的业务逻辑实现。
-> 返回响应。Server.Handler按照异步非阻塞
+> 1. Handler线程监听Call队列，如果Call队列非空，按FIFO规则从Call队列取出Call。
+> 2. 将Call交给RPC.Server处理。
+> 3. 借助JDK提供的Method，完成对目标方法的调用，目标方法由具体的业务逻辑实现。
+> 4. 返回响应。Server.Handler按照异步非阻塞
 
 ### 总结
 
-	以上为笔者大概总结的方法,希望对读者起到一定的帮助.
+	以上为笔者总结Hadoop IPC部分原理,感兴趣的读者可以继续深入阅读,比如生产者消费者线程模型,以及NIO操作笔者都没有展开聊.希望本文对读者起到一定的帮助.
 	
 ### 参考
 
-*https://www.cnblogs.com/ZisZ/p/3253195.html
-*http://blog.sina.com.cn/s/blog_15d9697c00102wk9v.html
-*http://hadoop.apache.org/
+* https://www.cnblogs.com/ZisZ/p/3253195.html
+* http://blog.sina.com.cn/s/blog_15d9697c00102wk9v.html
+* http://hadoop.apache.org/
