@@ -15,9 +15,7 @@ tag: 大数据技术
 
 ### 脚本介绍
 
- * 首先切换到hive安装目录下,`cd /opt/hive/bin`
-  
- * 我们可以看到如下命令,hive命令需要二次开发修改脚本
+ * 首先切换到hive安装目录下,`cd /opt/hive/bin`我们可以看到如下命令,hive命令需要二次开发修改脚本
  
 <div align="left">
 <img src="/images/posts/hive02/hive01.png" height="140" width="1440" />  
@@ -31,9 +29,7 @@ tag: 大数据技术
 
 ### 修改脚本内容
 
-   修改hive脚本
- 
- * 在hive文件最前面添加判断是否传入参数(此段脚本可有可无),目的禁用命令行交互
+ * 修改hive脚本,在hive文件最前面添加判断是否传入参数(此段脚本可有可无),目的禁用命令行交互
  
  ```
    if [ $# -eq 0 ]
@@ -42,7 +38,8 @@ tag: 大数据技术
    exit -1;
    fi
  ```
-  * 在hive脚本中判断如果没有输入`--service`情况下采用`beeline`方式连接hive
+
+  * 修改hive脚本,在hive脚本中判断如果没有输入`--service`情况下采用`beeline`方式连接hive
 
 ```
 if [ "$SERVICE" = "" ] ; then
@@ -54,7 +51,7 @@ if [ "$SERVICE" = "" ] ; then
 fi
 ```
 
-   修改beeline.sh文件,添加默认的连接`hiveserver2`服务地址,采用`${USER}`获取当前执行shell的用户,`-p`输入密码,`$@`为其他命令行参数
+  * 修改beeline.sh文件,添加默认的连接`hiveserver2`服务地址,采用`${USER}`获取当前执行shell的用户,`-p`输入密码,`$@`为其他命令行参数
  
 ```
  THISSERVICE=beeline
