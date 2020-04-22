@@ -87,7 +87,7 @@ beeline_help () {
 
 ### 测试
 
-测试直接执行`hive -e "show databases"`命令(前执行脚本用户执行beeline连接hiveserver2)
+* 测试直接执行`hive -e "show databases"`命令(前执行脚本用户执行beeline连接hiveserver2)
  
 <div align="left">
 <img src="/images/posts/hive02/hive03.png" height="440" width="1440" />  
@@ -95,7 +95,7 @@ beeline_help () {
 
 <br/>
 
-测试执行`hive -f "data.hive"`命令
+* 测试执行`hive -f "data.hive"`命令
 
 <div align="left">
 <img src="/images/posts/hive02/hive04.png" height="440" width="1440" />  
@@ -103,7 +103,7 @@ beeline_help () {
 
 <br/>
 
-3. 以上都测试成功,可无缝切换hivecli到hiveserver2.
+* 以上都测试成功,可无缝切换hivecli到hiveserver2.
 
 ### 总结
 
