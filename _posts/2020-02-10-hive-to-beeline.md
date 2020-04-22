@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "禁用HiveCli,执行Hive命令默认HiveServer2"
+title: "禁用HiveCli,执行hive命令默认连接HiveServer2"
 date: 2020-01-15
 tag: 大数据技术
 ---
@@ -54,7 +54,7 @@ if [ "$SERVICE" = "" ] ; then
 fi
 ```
 
-   修改beeline.sh文件,添加默认的连接`hiveserver2`服务地址,采用${USER}获取当前执行shell的用户,-p输入密码,$@为其他命令行参数
+   修改beeline.sh文件,添加默认的连接`hiveserver2`服务地址,采用`${USER}`获取当前执行shell的用户,`-p`输入密码,`$@`为其他命令行参数
  
 ```
  THISSERVICE=beeline
@@ -87,7 +87,7 @@ beeline_help () {
 
 ### 测试
 
-* 测试直接执行`hive -e "show databases"`命令(前执行脚本用户执行beeline连接hiveserver2)
+* 测试执行`hive -e "show databases"`命令(原理执行hive脚本的用户执行beeline连接hiveserver2)
  
 <div align="left">
 <img src="/images/posts/hive02/hive03.png" height="440" width="1440" />  
