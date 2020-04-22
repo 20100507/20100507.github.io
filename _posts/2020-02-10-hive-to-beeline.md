@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "禁用HiveCli,执行Hive命令默认连接HiveServer2"
+title: "禁用HiveCli,执行Hive命令默认HiveServer2"
 date: 2020-01-15
 tag: 大数据技术
 ---
@@ -8,11 +8,11 @@ tag: 大数据技术
 ### 前言
     
     目前我们使用Hive的大多数时候采用的HiveCli模式,但是HiveCli模式有一些短板,比如Ranger无法控制权限,所执行的相关脚本无法
-被Atlas捕获记录数据血缘关系,在交互方面HiveCli交互体验效果不是太好等等短板,社区最终抛弃了HiveCli.
-    我们生产环境通常使用诸如Zeus,Hera,Easyscheduler调度中心执行HQL,默认直接执行`hive -e "show databases;"`或者执行文件
-`hive -f show.hive`,由于生产环境已经使用了将近两年的`hive`命令.目前我们打算切换到`beeline`,但是如果一个一个去修改调度中
-中心的脚本文件几乎不太可能.最终我们采用二次修改开发`hive`本身命令的内容,达到了无缝切换`beeline`方式.
-		  
+    被Atlas捕获记录数据血缘关系,在交互方面HiveCli交互体验效果不是太好等等,Hive社区逐渐地抛弃HiveCli.
+    生产环境通常使用诸如Zeus,Hera,Easyscheduler调度中心执行HQL,默认直接执行`hive -e "show databases;"`或者执行文件
+    `hive -f show.hive`,由于生产环境已经使用了将近两年的`hive`命令.目前我们打算切换到`beeline`,但是如果一个一个去修改调度中
+    中心的脚本文件几乎不太可能.最终我们采用二次修改开发`hive`本身命令的内容,达到了无缝切换`beeline`方式.
+
 ### 脚本介绍
 
  1. 首先切换到hive安装目录下,`cd /opt/hive/bin`
@@ -20,7 +20,7 @@ tag: 大数据技术
  2. 我们可以看到如下命令,hive命令需要二次开发修改脚本
  
 <div align="left">
-<img src="/images/posts/hive02/hive01.png" height="340" width="1440" />  
+<img src="/images/posts/hive02/hive01.png" height="140" width="1440" />  
 </div>
 
 <br/>
@@ -28,7 +28,7 @@ tag: 大数据技术
  3. 切换到ext目录,其中beeline.sh需要二次修改的
     
 <div align="left">
-<img src="/images/posts/hive02/hive02.png" height="340" width="1440" />  
+<img src="/images/posts/hive02/hive02.png" height="140" width="1440" />  
 </div>
 
 ### 修改脚本内容
@@ -92,13 +92,13 @@ beeline_help () {
 1. 测试直接执行`hive -e "show databases"`命令(前执行脚本用户执行beeline连接hiveserver2)
  
 <div align="left">
-<img src="/images/posts/hive02/hive03.png" height="340" width="1440" />  
+<img src="/images/posts/hive02/hive03.png" height="440" width="1440" />  
 </div>   
 
 2. 测试执行`hive -f "data.hive"`命令
 
 <div align="left">
-<img src="/images/posts/hive02/hive04.png" height="340" width="1440" />  
+<img src="/images/posts/hive02/hive04.png" height="440" width="1440" />  
 </div>  
 
 <br/>
@@ -107,4 +107,4 @@ beeline_help () {
 
 ### 总结
 
-   以上是笔者总结的hivecli到hiveserver2无缝切换,希望对读者起到一定帮助作用.
+    以上是笔者总结的hivecli到hiveserver2无缝切换,希望对读者起到一定帮助作用.
