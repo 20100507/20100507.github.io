@@ -22,7 +22,7 @@ tag: Hadoop源码分析
   从HDFS实际存储数据我们可以看到以下结构
   
 <div>
-<img src="/images/posts/hadoop-source-09/hadoop01.png" height="220" width="560" />
+<img src="/images/posts/hadoop-source-09/hadoop01.png" height="120" width="1180" />
 </div>
 
 
