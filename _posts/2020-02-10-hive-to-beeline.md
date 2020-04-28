@@ -18,13 +18,13 @@ tag: 大数据技术
  * 首先切换到hive安装目录下,`cd /opt/hive/bin`我们可以看到如下命令,hive命令需要二次开发修改脚本
  
 <div align="left">
-<img src="/images/posts/hive02/hive01.png" height="140" width="1440" />  
+<img src="/images/posts/hive02/hive01.png" height="120" width="1440" />  
 </div>
 
  * 切换到ext目录,其中beeline.sh需要二次修改的
     
 <div align="left">
-<img src="/images/posts/hive02/hive02.png" height="140" width="1440" />  
+<img src="/images/posts/hive02/hive02.png" height="120" width="1440" />  
 </div>
 
 ### 修改脚本内容
@@ -87,7 +87,7 @@ beeline_help () {
 * 测试执行`hive -e "show databases"`命令(原理执行hive脚本的用户执行beeline连接hiveserver2)
  
 <div align="left">
-<img src="/images/posts/hive02/hive03.png" height="440" width="1440" />  
+<img src="/images/posts/hive02/hive03.png" height="480" width="1440" />  
 </div>
 
 <br/>
@@ -95,7 +95,7 @@ beeline_help () {
 * 测试执行`hive -f "data.hive"`命令
 
 <div align="left">
-<img src="/images/posts/hive02/hive04.png" height="440" width="1440" />  
+<img src="/images/posts/hive02/hive04.png" height="480" width="1440" />  
 </div>  
 
 <br/>
