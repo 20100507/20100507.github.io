@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Zookeeper不丢失Quorum扩容"
-date: 2020-02-20
+date: 2020-02-19
 tag: 大数据技术
 ---
 
