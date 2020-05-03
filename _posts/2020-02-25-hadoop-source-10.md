@@ -7,13 +7,15 @@ tag: Hadoop源码分析
 
 ### 前言
 
-    BlockInfo&BlockMap&DataNodeStorageInfo维护了数据块元数据关系.也就是我们通常所说的HDFS的元数据.这些数据都存放在内存中,因此对于
-  优化这些类的数据结构,一定程度上可以提高元数据存储内存的开销.下文我们看一看源码中这些类的数据流和结构.
+    BlockInfo&BlockMap&DataNodeStorageInfo维护了数据块元数据关系.也就是我们通常所说的HDFS的元数据.
+这些数据都存放在内存中,因此对于优化这些类的数据结构,一定程度上可以提高元数据存储内存的开销.下文我们
+看一看源码中这些类的数据流和结构.
 
 ### BlockInfo
 
-     BlockInfo该类为抽象类继承自Block是Block的扩展,其中扩展了块的副本,块和INodeFile的关系,处于UC态的块属性以及块集合中块的ID,Block指向下一个Block
-  的链表结构以及和DataNodeStorageInfo关联关系.该类的实现类有`BlockInfoContiguous`,`BlockInfoStriped`即纠删码以及普通的副本存储.
+     BlockInfo该类为抽象类继承自Block是Block的扩展,其中扩展了块的副本,块和INodeFile的关系,处于UC态的
+块属性以及块集合中块的ID,Block指向下一个Block的链表结构以及和DataNodeStorageInfo关联关系.该类的实现
+类有`BlockInfoContiguous`,`BlockInfoStriped`即纠删码以及普通的副本存储.
   
   1. BlockInfo构造方法
   
@@ -185,7 +187,7 @@ tag: Hadoop源码分析
 ### 整体结构梳理
   
 <div>
-<img src="/images/posts/hadoop-source-10/hadoop01.png" height="120" width="1180" />
+<img src="/images/posts/hadoop-source-10/hadoop01.png" height="880" width="1180" />
 </div>
  
 ### 总结
