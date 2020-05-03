@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Hadoop源码分析-12-maintenance"
+title: "Hadoop源码分析-12-Maintenance"
 date: 2020-02-29
 tag: Hadoop源码分析
 ---
 
 ### 前言
 
-     在某些情况下，例如DN滚动升级，最好将DN置于维护状态,在这种状态下NN停止向DN发送读写数据，同时不会去复制这些处于维护状态
-  的DN上的块.因为DN可能需要离线10分钟然后再次回来，比如切换为维护状态就是一个例子，不需要额外的开销去复制副本.让DN处于维护状态
+  在某些情况下，例如DN滚动升级，最好将DN置于维护状态,在这种状态下NN停止向DN发送读写数据，同时不会去复制这些处于维护状态
+的DN上的块.因为DN可能需要离线10分钟然后再次回来，比如切换为维护状态就是一个例子，不需要额外的开销去复制副本.让DN处于维护状态
 应用的场景有DN批量更新,还有机架需要进行维护.
 
 ### 执行步骤
@@ -16,12 +16,10 @@ tag: Hadoop源码分析
    1. 配置文件添加如下内容
      
 ```
-
 <property>
-<name>dfs.hosts.maintenance</name>
-<value>/etc/hadoop/conf/maintenance</value>
+    <name>dfs.hosts.maintenance</name>
+    <value>/etc/hadoop/conf/maintenance</value>
 </property>
-
 ```
    2. 在maintenance配置文件中添加对应的主机名
    
