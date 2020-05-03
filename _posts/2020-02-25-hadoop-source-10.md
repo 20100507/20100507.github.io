@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hadoop源码分析-09-BlockInfo&BlockMap"
+title: "Hadoop源码分析-09-BlockMap"
 date: 2020-02-25
 tag: Hadoop源码分析
 ---
