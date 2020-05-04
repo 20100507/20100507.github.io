@@ -22,7 +22,30 @@ tag: Hadoop源码分析
 </property>
 ```
    2. 在maintenance配置文件中添加对应的主机名
-   
+    
+    `cat /etc/hadoop/conf/maintenance`
+
+```
+    {
+      "hostName": "datanode-100",
+      "port": 50010,
+      "adminState": "IN_MAINTENANCE",
+      "maintenanceExpireTimeInMS": 1492543534000
+   }
+   {
+      "hostName": "datanode-101",
+      "port": 50010,
+      "adminState": "IN_MAINTENANCE",
+      "maintenanceExpireTimeInMS": 1492543534000
+   }
+   {
+      "hostName": "datanode-102",
+      "port": 50010,
+      "adminState": "IN_MAINTENANCE",
+      "maintenanceExpireTimeInMS": 1492543534000
+   }
+```
+
    3. 在NameNode执行命令
      
     `hdfs dfsadmin -refreshNodes`
