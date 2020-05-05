@@ -311,3 +311,4 @@ DataNode相关操作,比如删除DataNode,获取存活的DataNode,注册到NameN
 * https://issues.apache.org/jira/browse/HDFS-7877
 * http://hadoop.apache.org/
 * https://issues.apache.org/jira/secure/attachment/12709388/Supportmaintenancestatefordatanodes-2.pdf
+* https://blog.cloudera.com/hdfs-maintenance-state/
