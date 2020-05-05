@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hadoop源码分析-06-压缩解压"
+title: "Hadoop源码分析-06-compression"
 date: 2020-02-06
 tag: Hadoop源码分析
 ---

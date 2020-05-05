@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hadoop源码分析-08-租约"
+title: "Hadoop源码分析-08-Lease"
 date: 2020-02-15
 tag: Hadoop源码分析
 ---

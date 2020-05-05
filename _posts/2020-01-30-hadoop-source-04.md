@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hadoop源码分析-04-IPC原理"
+title: "Hadoop源码分析-04-IPC"
 date: 2020-01-30
 tag: Hadoop源码分析
 ---
