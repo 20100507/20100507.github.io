@@ -15,7 +15,7 @@ tag: Hadoop源码分析
   1. 访问http://datanode ip:9864/jmx 如下截图,可以看到慢盘检测后获取慢盘的数组
   
 <div>
-<img src="/images/posts/hadoop-source-18/hadoop01.png" height="380" width="580" />
+<img src="/images/posts/hadoop-source-18/hadoop01.png" height="480" width="580" />
 </div>     
 
 ### DataNodeDiskMetrics源代码
@@ -113,7 +113,7 @@ tag: Hadoop源码分析
   大致工作流程如下:
   
 <div>
-<img src="/images/posts/hadoop-source-18/hadoop02.png" height="380" width="580" />
+<img src="/images/posts/hadoop-source-18/hadoop02.png" height="580" width="580" />
 </div>
 
 ### OutlierDetector源代码
