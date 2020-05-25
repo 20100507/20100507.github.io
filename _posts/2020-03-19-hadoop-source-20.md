@@ -23,9 +23,9 @@ tag: Hadoop源码分析
 
   贴一张网上的图片
 
-     <div>
-     <img src="/images/posts/hadoop-source-20/hadoop03.png" height="580" width="680" />
-     </div>
+<div>
+<img src="/images/posts/hadoop-source-20/hadoop03.png" height="580" width="680" />
+</div>
 
   
 
@@ -38,9 +38,9 @@ tag: Hadoop源码分析
 3.    doCheckpoint()  核心方法进行checkpointer
 4. rollForwardByApplyingLogs() 根据日志进行滚动合并     
 
-   <div>
-   <img src="/images/posts/hadoop-source-20/hadoop05.png" height="580" width="380" />
-   </div>
+<div>
+<img src="/images/posts/hadoop-source-20/hadoop05.png" height="580" width="380" />
+</div>
 
 
 
@@ -51,9 +51,9 @@ tag: Hadoop源码分析
 
 . run()方法执行的判断的流程如下图：
 
-   <div>
-   <img src="/images/posts/hadoop-source-20/hadoop01.png" height="580" width="680" />
-   </div>
+<div>
+<img src="/images/posts/hadoop-source-20/hadoop01.png" height="380" width="680" />
+</div>
 
 > 1. 当前时间大于上一次检查时间+检查时间间隔[tx次数规则]
 > 2. 当前时间大于上一次editlog检查时间+检查间隔[时间规则] 
@@ -117,9 +117,9 @@ public void run() {
 
  接下来是`doCheckpoint()`方法,执行的大体流程如下图
 
-   <div>
-   <img src="/images/posts/hadoop-source-20/hadoop02.png" height="380" width="880" />
-   </div>
+<div>
+<img src="/images/posts/hadoop-source-20/hadoop02.png" height="340" width="880" />
+</div>
 
 
 源代码解释如下：
@@ -263,4 +263,4 @@ void doCheckpoint() throws IOException {
 
 ### 参考
 
-* https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsEditsViewer.html
+* https://hadoop.apache.org/
