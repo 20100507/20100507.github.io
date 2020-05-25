@@ -118,7 +118,7 @@ public void run() {
  接下来是`doCheckpoint()`方法,执行的大体流程如下图
 
 <div>
-<img src="/images/posts/hadoop-source-20/hadoop02.png" height="340" width="880" />
+<img src="/images/posts/hadoop-source-20/hadoop02.png" height="340" width="980" />
 </div>
 
 
