@@ -7,7 +7,8 @@ tag: Hadoop源码分析
 
 ### 前言
 
-    HttpFs提供 了REST 风格的网关服务，可以支持所有的HDFS的操作，并且可以和 webhdfs进行交互.同时HttpFs可以和在不同版本的hadoop集群之间传输数据，避免了RPC的版本问题。
+    HttpFs提供 了REST 风格的网关服务，可以支持所有的HDFS的操作，并且可以和 webhdfs进行交互.
+    同时HttpFs可以和在不同版本的hadoop集群之间传输数据，避免了RPC的版本问题。
 
 ### 优缺点
 
@@ -54,7 +55,7 @@ tag: Hadoop源码分析
 
   * 使用
 
-1.   获取垃圾箱目录
+1. 获取垃圾箱目录
 
    `curl 'http://192.168.149.131:14000/webhdfs/v1/user/foo?op=GETTRASHROOT&user.name=foo'`
 
