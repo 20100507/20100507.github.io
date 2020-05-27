@@ -136,7 +136,7 @@ tag: Hadoop源码分析
   }
  ```
 
-* FSOperations类
+  * FSOperations类
 
   ```java
   @Override
@@ -155,8 +155,9 @@ tag: Hadoop源码分析
 
 ### 总结
 
-       本文源代码仅仅是稍微简单提了一些 ，并没有说到启动以及`Filter`过滤器以及安全等模块.感兴趣的读者可以下载源代码阅读与理解.
-       在Hadoop提供了一个独立的模块,名称为`hadoop-hdfs-httpfs`.笔者在阅读其中的文档发现了其中一个小问题，已经提交社区 iira编号为 HDFS-15376
+       本文源代码仅仅是稍微简单提了一些 ，并没有提到Jetty启动`Filter`过滤器以及安全等.感兴趣的读者可以下载源代码阅读与理解.
+       在Hadoop提供了一个独立的模块,名称为`hadoop-hdfs-httpfs`.笔者在阅读其中的文档发现了其中一个小问题，已经提交社区 jira
+       编号为`HDFS-15376`
 
 
 ### 参考
