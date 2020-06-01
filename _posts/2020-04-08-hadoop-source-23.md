@@ -362,16 +362,18 @@ public void doGet(HttpServletRequest request, HttpServletResponse response
 ​      综上我们可以总结出来大体粗略的执行流程图
 
 <div>
-<img src="/images/posts/hadoop-source-23/hadoop01.png" height="180" width="780" />
+<img src="/images/posts/hadoop-source-23/hadoop01.png" height="120" width="780" />
 </div>
+
 
    这里我们也可以了解到其实执行该命令我们完全可以绕过命令行，直接在WEB-UI执行该命令即可，例如直接在
 
 浏览器中输入如下命令`http://192.168.149.132:50070/fsck?ugi=hadoop`,浏览器中返回如下：
 
 <div>
-<img src="/images/posts/hadoop-source-23/hadoop02.png" height="480" width="780" />
+<img src="/images/posts/hadoop-source-23/hadoop02.png" height="580" width="880" />
 </div>
+
 ### 核心执行流程
 
 1. 首先我们进入`NamenodeFsck`类的fsck方法
